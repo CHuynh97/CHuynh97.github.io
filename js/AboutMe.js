@@ -1,16 +1,11 @@
 $(document).ready(function() {
-	function isScrolledIntoView(element) {
-		var TopView = $(window).scrollTop();
-		var BottomView = TopView + $(window).height();
-
-		var elementTop = $(element).offset().top();
-		var elementBottom = elementTop + $(element).height();
-		var result = ((elementBottom > BottomView) && (elementTop < TopView));
-		return result;
+	
+	$(".infoContainer").hide()
+	if ($("div").is(":visible")){
+		$(".infoContainer").fadeIn();
 	}
-
-	var testInt = 5;
-	$(".testClass").html(testInt);
+		
+	
 
 });
 
