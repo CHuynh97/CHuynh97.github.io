@@ -9,16 +9,9 @@ $(document).ready(function() {
 	}
 	
 
-	if (!isOnScreen(".infoText")) {
-		$(".infoText").css({
-			animation-play-state: "paused";
-		});
-	} else {
-		$(".infoText").css({
-			animation-play-state: "running";
-		});
-	}
-
+	setTimeout(function() {
+		$(".infoText").removeClass("startUp");
+	}, 1000);
 });
 
 

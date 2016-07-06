@@ -14,10 +14,13 @@ h1, h2, h3, h4, h5, h6 {
 	100% {
 		transform: translateX(0px);
 		opacity: 1
-		
 	}
 }
 
 .infoText {
 	animation: slideLeft 0.5s 1;
+
+}
+.startUp {
+	display: none;
 }
