@@ -2,8 +2,33 @@
 h1, h2, h3, h4, h5, h6 {
 	margin-left: 75px;
 	margin-right: 75px;
+
 }
 
+.fixedNavBar {
+	position: fixed !important;
+	top: 0px;
+	width: 100%;
+}
+
+.navbar-header.navbar-brand {
+	font-size: 150%;
+}
+.nav.navbar-nav li {
+	font-size: 140%
+}
+
+#AboutMe {
+	border-top-width: 2cm;
+}
+
+.infoText{
+
+}
+
+.infoSlideLeft {
+	animation: slideLeft 0.5s;
+}
 
 @keyframes slideLeft {
 	0% {
@@ -17,10 +42,4 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
-.infoText {
-	animation: slideLeft 0.5s 1;
 
-}
-.startUp {
-	display: none;
-}
