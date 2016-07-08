@@ -76,7 +76,7 @@ $(document).ready(function() {
 		if (isOnScreen(id)) {
 			if ($(id).hasClass("hideOnStart")) {
 				$(id).removeClass("hideOnStart");		
-				//$(id).addClass(id);
+				$(id).addClass("SlideLeft");
 			}
 			
 		}
@@ -85,15 +85,17 @@ $(document).ready(function() {
 
 	//console.log(isOnScreen("#AboutMeh1"));
 	
-	//$(window).scroll(function(){
-	//	for(var i = 0; i < allIds.length; i++) {
-	//		var id = "#"+allIds[i];
-	//		if (isOnScreen(i)) {
-	//			$(i).removeClass(i);		
-	//			$(i).addClass(i);
-	//		}
-	//	}
-	//});
+	$(window).scroll(function(){
+		for(var i = 0; i < animatingInfo.length; i++) {
+			var id = animatingInfo[i];
+			if (isOnScreen(id)) {
+				if ($(id).hasClass("hideOnStart")) {
+					$(id).removeClass("hideOnStart");		
+					$(id).addClass("SlideLeft");
+				}	
+			}
+		}
+	});
 
 	
 
