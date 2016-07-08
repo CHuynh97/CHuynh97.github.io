@@ -1,35 +1,38 @@
-
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6{
 	margin-left: 75px;
 	margin-right: 75px;
-
 }
-
 .fixedNavBar {
 	position: fixed !important;
 	top: 0px;
 	width: 100%;
+	margin-left: 0px !important;
 }
 
 .navbar-header.navbar-brand {
 	font-size: 150%;
 }
+
 .nav.navbar-nav li {
 	font-size: 140%
 }
 
+.activeNav {
+	border-bottom-style: solid !important;
+}
+
 #AboutMe {
-	border-top-width: 2cm;
+	margin-top: 2cm;
 }
 
-.infoText{
 
-}
-
-.infoSlideLeft {
+.SlideLeft {
 	animation: slideLeft 0.5s;
 }
 
+.hideOnStart {
+	display: none;
+}
 @keyframes slideLeft {
 	0% {
 		transform: translateX(100px);
