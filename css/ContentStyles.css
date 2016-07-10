@@ -7,7 +7,9 @@ h1, h2, h3, h4, h5, h6{
 	top: 0px;
 	width: 100%;
 	margin-left: 0px !important;
+	z-index: -1;
 }
+
 
 .navbar-header.navbar-brand {
 	font-size: 150%;
@@ -19,34 +21,93 @@ h1, h2, h3, h4, h5, h6{
 
 .activeNav {
 	border-bottom-style: solid !important;
+	border-bottom-color: #777;
 }
 
 #AboutMe {
-	margin-top: 2cm;
+	margin-top: 2cm; 
+	
 }
+
+.Header {
+	width:91%;
+	text-align: center;
+}
+
+
+ul {
+	margin-left: 75px;
+}
+
 
 
 .SlideLeft {
 	animation: slideLeft 0.5s;
 }
 
+.Exit {
+	animation: slideRight 0.5s;
+}
+
 .hideOnStart {
-	display: none;
+	opacity: 0;
 }
 @keyframes slideLeft {
 	0% {
 		transform: translateX(100px);
-		opacity: 0
+		opacity: 0;
 	}
 	
 	100% {
 		transform: translateX(0px);
-		opacity: 1
+		opacity: 1;
+	}
+}
+@keyframes slideRight {
+	0% {
+		transform: translateX(0px);
+		opacity: 1;
+		
+	}
+	
+	100% {
+		transform: translateX(100px);
+		opacity: 0;
 	}
 }
 
 #back-to-top {
 	position: absolute;
 	right: 0;
-	top: 2000px;
+	top:1500px;
+}
+
+table {
+	width: 100%;
+}
+
+img {
+	float: right !important;
+	margin-right: 75px;
+	margin-bottom: 10px;
+}
+
+
+.list-group li {
+	border: none;
+	font-size: 18px;
+	background-color: transparent;
+}
+
+#myFace {
+	height: 200px;
+	width: 200px;
+}
+#ContactMe {
+	position: fixed;
+	right: 0;
+	top: 50%;
+}
+body {
+	background-color: #f8f8f8;
 }

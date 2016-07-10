@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Chris Huynh - About Me</title>
+	<title>Chris Huynh</title>
 
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.min.css">
@@ -13,7 +13,7 @@
 </head>
 <body>
 	<div class="fixedNavBar">
-	<nav class="navbar navbar-default ">
+	<nav class="navbar navbar-default">
 		<div class="container-fluid">
 		<div class="navbar-header navbar-brand">Christopher Huynh</div>
 		<ul class="nav navbar-nav pull-right">
@@ -25,42 +25,90 @@
 	</nav>
 	</div>
 
-	<div id="AboutMeh1"><h1 id="AboutMe" class="animateInfo hideOnStart">About Me</h1></div>
 	
-	<div id="HomeAndBdayDiv">
-		<div id="HomeAndBday" class="animateInfo hideOnStart">
-			<h3>Hometown: Aurora, Ontario, Canada </h3>
-			<h3>Birthday: September 16, 1997</h3>
-		</div>
-	</div>
+	<h1 id="AboutMe" class="Header animateInfo hideOnStart">About Me</h1>
 
-	<div id="EducationDiv">
-		<div id="EducationText" class="animateInfo hideOnStart">
-			<h2>Education</h2>
-			<h3>University of Waterloo</h3>
-			<h4>Candidate for Bachelor of Applied Science, BAsc</h4>
-			<h4>Computer Engineering</h4>
-		</div>	
+	<table>
+	<tr id="personalStuff" class="animateInfo hideOnStart">
+		<td>
+			<div >
+				<h3>Hometown: Aurora, Ontario, Canada </h3>
+				<h3>Birthday: September 16, 1997</h3>
+			</div>
+		</td>
+		<td><img id="myFace" class="animateInfo hideOnStart" src="images/myFace.png"></td>
+	</tr>
+
+	<tr id="Education" class="animateInfo hideOnStart">
+		<td>
+			<div >
+				<h2>Education</h2>
+				<h3>University of Waterloo</h3>
+				<h4>Candidate for Bachelor of Applied Science, BAsc</h4>
+				<h4>Computer Engineering</h4>
+			</div>
+		</td>
+		<td><img id="WaterlooPic" class="animateInfo hideOnStart" src="images/Uwaterloo_seal.gif"></td>
+	</tr>
+	</table>
+	
+	
+	<h1 id="Skills" class="Header animateInfo hideOnStart">Technical Skills</h1>
+	<div id="SkillsDiv">
+			<ul class="list-group SkillList">
+				<li class="list-group-item">Java
+				<h6>Android</h6>
+				</li>
+				<li class="list-group-item">C/C++</li>
+				<li class="list-group-item">C#</li>
+				<li class="list-group-item">Python</li>
+				<li class="list-group-item">JavaScript
+				<h6>jQuery, AngulrJS</h6>
+				</li>
+				<li class="list-group-item">HTML, CSS</li>
+				<li class="list-group-item">Python</li>
+				<li class="list-group-item">Git</li>
+
+			</ul>
 	</div>
 	
-	<div id="EducationDiv2">
-		<div id="EducationText2" class="animateInfo hideOnStart">
-			<h2>Education</h2>
-			<h3>University of Waterloo</h3>
-			<h4>Candidate for Bachelor of Applied Science, BAsc</h4>
-			<h4>Computer Engineering</h4>
-		</div>	
-	</div>
 	
 	
-	
-	<div id="Projectsh1"><h1 id="Projects" class="animateInfo hideOnStart">Projects</h1></div>
+	<h1 id="Projects" class="Header animateInfo hideOnStart">Projects</h1>
 
 	<div id="PacManVRDiv">
 		<div id="PacManVR" class="animateInfo hideOnStart">
 			<h2>PacMan VR</h2>
+			<ul class="list-group ProjectDetails">
+				<li class="list-group-item">Unity</li>
+				<li class="list-group-item">Visual Studio, C#</li>
+				<li class="list-group-item">Google VR SDK for Unity</li>
+			</ul>
 		</div>
 	</div>	
+
+	<button id="ContactMe" data-toggle="modal" data-target="#contactModal">Conact</button>
+
+	<!-- Modal -->
+  	<div class="modal fade" id="contactModal" role="dialog">
+    	<div class="modal-dialog">
+    
+     	<!-- Modal content-->
+      	<div class="modal-content">
+        	<div class="modal-header">
+          		<button type="button" class="close" data-dismiss="modal">&times;</button>
+          		<h4 class="modal-title">Modal Header</h4>
+        	</div>
+        	<div class="modal-body">
+          		<p>Some text in the modal.</p>
+        	</div>
+        	<div class="modal-footer">
+          		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        	</div>
+      	</div>
+      
+    	</div>
+  	</div>
 		
 	<h5 id="back-to-top"><a href=#>back to top</a></h5>
 

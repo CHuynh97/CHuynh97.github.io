@@ -1,0 +1,68 @@
+body {
+	background-color: #f8f8f8;
+}
+
+.Name {
+	width: 100px;
+	height: 100px;
+	margin: 0;
+}
+
+#FirstName img{
+	position: absolute;
+}
+#FirstName {
+	position: fixed;
+	top: 30%;
+	left: 15%;
+}
+
+#LastName img{
+	position: absolute;
+}
+#LastName {
+	position: fixed;
+	top: 50%;
+	left: 20%;
+}
+
+
+#c1, #h2{
+	z-index: 1;
+	animation: slide 4s;
+}
+
+#h1, #u1 {
+	left: 100px;
+}
+
+#r1, #y1 {
+	left: 200px;
+}
+
+#i1, #n1 {
+	left: 300px;
+}
+
+#s1, #h3 {
+	left: 400px;
+}
+
+
+
+
+
+@keyframes slide{
+	0% {
+		transform: translateX(400px);
+		opacity: 0;
+	}
+	50% {
+		transform: translateX(400px);
+		opacity: 1;
+	}
+	100% {
+		transform: translateX(0px);
+		opacity: 1;
+	}
+}
