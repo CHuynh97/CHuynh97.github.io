@@ -31,15 +31,15 @@ $(document).ready(function() {
 	setTimeout(function() {
 		$(fletters[3]).show();
 		$(lletters[3]).show();
-	}, 2300);	
+	}, 2350);	
 
 	setTimeout(function() {
 		$(fletters[2]).show();
 		$(lletters[2]).show();
-	}, 2600);
+	}, 2650);
 	
 	setTimeout(function() {
 		$(fletters[1]).show();
 		$(lletters[1]).show();
-	}, 2900);	
+	}, 2950);	
 });
