@@ -21,25 +21,28 @@ $(document).ready(function() {
 		$(fletters[i]).hide();
 		$(lletters[i]).hide();
 	}
-	
-	
-	setTimeout(function() {
-		$(fletters[4]).show();
-		$(lletters[4]).show();
-	}, 2000);	
+	var d = new Date();
+	console.log("time at start: "+d.toLocaleTimeString());
+
+	var myInterval;
 
 	setTimeout(function() {
-		$(fletters[3]).show();
-		$(lletters[3]).show();
-	}, 2350);	
+		myInterval = setInterval(function() {
+			var fPosition = $("#c1").position().left;
+			var lPosition = $("#h2").position().left;
+			for(var i = 1; i < fletters.length; i++) {
+				if (fPosition <= (i*100) && lPosition <= (i*100)) {
+					$(fletters[i]).show();
+					$(lletters[i]).show();
+				}
+			}
+		}, 50);
+		$(".blank").hide();
+	}, 2000);
 
 	setTimeout(function() {
-		$(fletters[2]).show();
-		$(lletters[2]).show();
-	}, 2650);
+		clearInterval(myInterval);
+	}, 4000);
 	
-	setTimeout(function() {
-		$(fletters[1]).show();
-		$(lletters[1]).show();
-	}, 2950);	
+
 });

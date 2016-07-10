@@ -13,9 +13,12 @@
 </head>
 <body>
 	<div class="fixedNavBar">
-	<nav class="navbar navbar-default">
-		<div class="container-fluid">
-		<div class="navbar-header navbar-brand">Christopher Huynh</div>
+	<nav class="navbar transparent">
+		<div class="container-fluid ">
+		<div id="initials">
+			<img id="c-initial" src="images/letter-tiles/c-tile.svg">
+			<img id="h-initial" src="images/letter-tiles/h-tile.svg">
+		</div>
 		<ul class="nav navbar-nav pull-right">
 			<li id="AboutMeNav"><a>About Me</a></li>
 			<li id="SkillsNav"><a>Skills</a></li>
@@ -56,18 +59,18 @@
 	<h1 id="Skills" class="Header animateInfo hideOnStart">Technical Skills</h1>
 	<div id="SkillsDiv">
 			<ul class="list-group SkillList">
-				<li class="list-group-item">Java
+				<li id="skill1" class="list-group-item animateInfo hideOnStart">Java
 				<h6>Android</h6>
 				</li>
-				<li class="list-group-item">C/C++</li>
-				<li class="list-group-item">C#</li>
-				<li class="list-group-item">Python</li>
-				<li class="list-group-item">JavaScript
+				<li id="skill2" class="list-group-item animateInfo hideOnStart">C/C++</li>
+				<li id="skill3" class="list-group-item animateInfo hideOnStart">C#</li>
+				<li id="skill4" class="list-group-item animateInfo hideOnStart">Python</li>
+				<li id="skill5" class="list-group-item animateInfo hideOnStart">JavaScript
 				<h6>jQuery, AngulrJS</h6>
 				</li>
-				<li class="list-group-item">HTML, CSS</li>
-				<li class="list-group-item">Python</li>
-				<li class="list-group-item">Git</li>
+				<li id="skill6" class="list-group-item animateInfo hideOnStart">HTML, CSS</li>
+				<li id="skill7" class="list-group-item animateInfo hideOnStart">Python</li>
+				<!--<li id="skill8" class="list-group-item animateInfo hideOnStart"">Git</li>-->
 
 			</ul>
 	</div>
@@ -86,8 +89,19 @@
 			</ul>
 		</div>
 	</div>	
-
-	<button id="ContactMe" data-toggle="modal" data-target="#contactModal">Conact</button>
+	
+	<!--Contact button-->
+	<div id="ContactMe" data-toggle="modal" data-target="#contactModal">
+		
+		<img class="contactTile" src="images/letter-tiles/c-tile.svg">
+		<img class="contactTile" src="images/letter-tiles/o-tile.svg">
+		<img class="contactTile" src="images/letter-tiles/n-tile.svg">
+		<img class="contactTile" src="images/letter-tiles/t-tile.svg">
+		<img class="contactTile" src="images/letter-tiles/a-tile.svg">
+		<img class="contactTile" src="images/letter-tiles/c-tile.svg">
+		<img class="contactTile" src="images/letter-tiles/t-tile.svg">
+		
+	</div>
 
 	<!-- Modal -->
   	<div class="modal fade" id="contactModal" role="dialog">
@@ -100,7 +114,26 @@
           		<h4 class="modal-title">Modal Header</h4>
         	</div>
         	<div class="modal-body">
-          		<p>Some text in the modal.</p>
+          		<figure> 
+          		<img>
+
+				<figcaption id = "email">email</figcaption>
+				</figure>
+				<figure> 
+          		<img>
+
+				<figcaption id = "phone">phone</figcaption>
+				</figure>
+				<figure> 
+          		<img>
+
+				<figcaption id = "resume">reume</figcaption>
+				</figure>
+				<figure> 
+          		<img>
+
+				<figcaption id = "git">GitHub</figcaption>
+				</figure>
         	</div>
         	<div class="modal-footer">
           		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

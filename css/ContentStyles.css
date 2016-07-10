@@ -7,7 +7,12 @@ h1, h2, h3, h4, h5, h6{
 	top: 0px;
 	width: 100%;
 	margin-left: 0px !important;
-	z-index: -1;
+	z-index: 1;
+}
+
+.transparent {
+	border-bottom: none;
+	color: transparent;
 }
 
 
@@ -18,10 +23,41 @@ h1, h2, h3, h4, h5, h6{
 .nav.navbar-nav li {
 	font-size: 140%
 }
+.nav.navbar-nav li a{
+	color: #777;
+}
+#AboutMeNav, #SkillsNav, #ProjectsNav {
+	cursor: pointer;
+}
 
 .activeNav {
 	border-bottom-style: solid !important;
 	border-bottom-color: #777;
+}
+#initials {
+	position: fixed;
+	top:0;
+	left:0;
+	width: 75px;
+	height: 100px;
+}
+
+#c-initial {
+	position: absolute;
+	top:0;
+	left:0;
+	width: 50px;
+	height: 50px;
+	margin: 0;
+}
+
+#h-initial {
+	position: absolute;
+	top:50%;
+	right:0;
+	width: 50px;
+	height: 50px;
+	margin: 0;
 }
 
 #AboutMe {
@@ -38,7 +74,9 @@ h1, h2, h3, h4, h5, h6{
 ul {
 	margin-left: 75px;
 }
-
+li h6 {
+	margin-left: 0;
+}
 
 
 .SlideLeft {
@@ -110,4 +148,23 @@ img {
 }
 body {
 	background-color: #f8f8f8;
+}
+
+#ContactMe {
+	width: 25px;
+	height: 180px;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+#ContactMe:hover{
+	transform: scale(1.1);
+}
+
+.contactTile {
+	width: 25px;
+	height: 25px;
+	margin-right: 0 !important;
+	margin-bottom: 0;
 }

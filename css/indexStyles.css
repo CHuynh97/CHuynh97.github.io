@@ -28,7 +28,7 @@ body {
 
 
 #c1, #h2{
-	z-index: 1;
+	z-index: 2;
 	animation: slide 4s;
 }
 
@@ -48,7 +48,10 @@ body {
 	left: 400px;
 }
 
-
+.blank {
+	left: 400px;
+	z-index: 1;
+}
 
 
 
