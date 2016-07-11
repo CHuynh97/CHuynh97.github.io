@@ -93,13 +93,13 @@
 	<!--Contact button-->
 	<div id="ContactMe" data-toggle="modal" data-target="#contactModal">
 		
-		<img class="contactTile" src="images/letter-tiles/c-tile.svg">
-		<img class="contactTile" src="images/letter-tiles/o-tile.svg">
-		<img class="contactTile" src="images/letter-tiles/n-tile.svg">
-		<img class="contactTile" src="images/letter-tiles/t-tile.svg">
-		<img class="contactTile" src="images/letter-tiles/a-tile.svg">
-		<img class="contactTile" src="images/letter-tiles/c-tile.svg">
-		<img class="contactTile" src="images/letter-tiles/t-tile.svg">
+		<img class="contact-button" src="images/letter-tiles/c-tile.svg">
+		<img class="contact-button" src="images/letter-tiles/o-tile.svg">
+		<img class="contact-button" src="images/letter-tiles/n-tile.svg">
+		<img class="contact-button" src="images/letter-tiles/t-tile.svg">
+		<img class="contact-button" src="images/letter-tiles/a-tile.svg">
+		<img class="contact-button" src="images/letter-tiles/c-tile.svg">
+		<img class="contact-button" src="images/letter-tiles/t-tile.svg">
 		
 	</div>
 
@@ -113,27 +113,29 @@
           		<button type="button" class="close" data-dismiss="modal">&times;</button>
           		<h4 class="modal-title">Modal Header</h4>
         	</div>
-        	<div class="modal-body">
-          		<figure> 
-          		<img>
-
-				<figcaption id = "email">email</figcaption>
+        	<div id="contact-list" class="modal-body">
+        	
+          		<figure id="email"> 
+          		<img class="contact-tile" src="images/contact-tiles/mail-tile.svg">
+				<figcaption>email</figcaption>
 				</figure>
-				<figure> 
-          		<img>
 
-				<figcaption id = "phone">phone</figcaption>
+				<figure id="phone"> 
+          		<img class="contact-tile" src="images/contact-tiles/phone-tile.svg">
+				<figcaption>phone</figcaption>
 				</figure>
-				<figure> 
-          		<img>
 
-				<figcaption id = "resume">reume</figcaption>
+				<figure id="resume"> 
+          		<img class="contact-tile" src="images/contact-tiles/resume-tile.svg">
+				<figcaption>resume</figcaption>
 				</figure>
-				<figure> 
-          		<img>
 
-				<figcaption id = "git">GitHub</figcaption>
+				<figure id="github"> 
+          		<img class="contact-tile" src="images/contact-tiles/github-tile.svg">
+				<figcaption>GitHub</figcaption>
 				</figure>
+				<h2 id="modal-text">Description</h2>
+			
         	</div>
         	<div class="modal-footer">
           		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
