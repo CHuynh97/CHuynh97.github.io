@@ -140,8 +140,18 @@ $(document).ready(function() {
 		}
 	});
 
-	
-
+	$("#email").hover(function() {
+		$("#contact-description").html("chris.huynh17@gmail.com");
+	});
+	$("#phone").hover(function() {
+		$("#contact-description").html("289-879-1347");
+	});
+	$("#resume").hover(function() {
+		$("#contact-description").html("Click to view my resume.");
+	});
+	$("#github").hover(function() {
+		$("#contact-description").html("Click to view my GitHub page.");
+	});
 
 });
 
