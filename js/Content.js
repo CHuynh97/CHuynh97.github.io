@@ -26,14 +26,6 @@ $(document).ready(function() {
 		animationRange = parseFloat(animationRange.toFixed());
 		lowerThreshold -= 0.5;
 		lowerThreshold = parseFloat(lowerThreshold.toFixed());
-		
-		/* log values when testing
-		console.log("Window top: " + $(window).scrollTop());
-		console.log("upperThreshold: " + upperThreshold);
-		console.log("Range: " + animationRange);
-		console.log("lowerThreshold: " + lowerThreshold);
-		console.log("Window bottom: " + ($(window).scrollTop() + $(window).height()));
-		console.log('\n');*/
 	}
 	//assign values on load
 	updateThresholds();
