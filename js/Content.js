@@ -45,6 +45,14 @@ $(document).ready(function() {
 
 		return ((elementBottom < lowerThreshold) && (elementTop > upperThreshold));
 	}
+	function aboveRange(element) {
+		var elementBottom = $(element).offset().top; + $(element).height();
+		return (elementBottom <= upperThreshold);
+	}
+	function belowRange(element) {
+		var elementTop = $(element).offset().top;
+		return (elementTop >= lowerThreshold);
+	}
 
 	
 	
@@ -82,23 +90,47 @@ $(document).ready(function() {
 	}
 
 	//function to scroll to header when nav item clicked
-	//function scrollToId(element){
-	//
-	//}
+	function scrollToId(element){
+		//scroll to height where element is in animation range
+		var height = $(element).offset().top - ($(window).height()*0.2);
+		var current = $(window).scrollTop();
+		// trunctate both values
+		height -= 0.5;
+		height = parseFloat(height.toFixed());
+		current -= 0.5;
+		current = parseFloat(animationRange.toFixed());
+
+		var scrollInterval = setInterval(function(){
+			if (current < height) {
+				current++;
+				$(window).scrollTop(current);
+			}
+			else if (current > height) {
+				current--;
+				$(window).scrollTop(current);
+			} 
+		}, 1);
+		if (current == height){
+			clearInterval(scrollInterval);
+		}
+		
+		
+		
+	}
 	
 	//implement onclick listeners for navbar items
 	$("#AboutMeNav").addClass("activeNav");
 	$("#AboutMeNav").click(function() {
 		changeActiveNav("#AboutMeNav");
-		//call scroll function
+		scrollToId("#AboutMe");
 	});
 	$("#SkillsNav").click(function() {
 		changeActiveNav("#SkillsNav");
-		//call scroll function
+		scrollToId("#Skills");
 	});
 	$("#ProjectsNav").click(function() {
 		changeActiveNav("#ProjectsNav");
-		//call scroll function
+		scrollToId("#Projects");
 	});
 	
 	console.log("On start:\n");
@@ -119,6 +151,8 @@ $(document).ready(function() {
 	
 	$(window).scroll(function(){
 		updateThresholds();
+		console.log("Skills aboveRange: " + aboveRange("#Skills"));
+		
 		for (var i = 0; i < animateIDs.length; i++) {
 			var id = animateIDs[i];
 			if (inAnimationRange(id)) {
@@ -130,7 +164,7 @@ $(document).ready(function() {
 					}	
 					$(id).addClass("SlideLeft");
 				}
-				else {
+				else if (aboveRange(id) || belowRange(id)){
 					if ($(id).hasClass("SlideLeft")) {
 						$(id).removeClass("SlideLeft");
 						$(id).addClass("Exit");

@@ -9,6 +9,10 @@ a:hover {
 	color: #333;
 	text-decoration: none;
 }
+a:focus {
+	color: #333;
+	text-decoration: none;
+}
 .fixedNavBar {
 	position: fixed !important;
 	top: 0px;

@@ -21,8 +21,6 @@ $(document).ready(function() {
 		$(fletters[i]).hide();
 		$(lletters[i]).hide();
 	}
-	var d = new Date();
-	console.log("time at start: "+d.toLocaleTimeString());
 
 	var myInterval;
 
@@ -44,5 +42,8 @@ $(document).ready(function() {
 		clearInterval(myInterval);
 	}, 4000);
 	
+	$("html").click(function() {
+		$("html").load("content.html");
+	})
 
 });
