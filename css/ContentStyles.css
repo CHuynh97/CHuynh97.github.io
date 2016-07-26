@@ -144,16 +144,19 @@ img {
 }
 
 
+#myFace {
+	height: 200px;
+	width: 200px;
+}
+
 .list-group li {
 	border: none;
 	font-size: 18px;
 	background-color: transparent;
 }
 
-#myFace {
-	height: 200px;
-	width: 200px;
-}
+
+
 #ContactMe {
 	position: fixed;
 	right: 0;
@@ -222,4 +225,30 @@ body {
 #contact-description {
 	margin: 0;
 	float: left;
+}
+
+.progress {
+	margin-right: 25%;
+}
+
+.skill-text {
+	width: 20%;
+	margin-left: 50px;
+}
+
+
+#PacMan-carousel {
+	height: 50%;
+	width:50%;
+	float: right !important;
+	margin-right: 75px;
+	padding: 0;
+}
+.project {
+	width: 50%;
+	margin-left: 75px;
+}
+.carousel-image {
+	width: 100%;
+	height: 100%;
 }

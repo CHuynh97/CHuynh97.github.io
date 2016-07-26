@@ -82,32 +82,13 @@ $(document).ready(function() {
 	}
 
 	//function to scroll to header when nav item clicked
-	function scrollToId(element){
-		//scroll to height where element is in animation range
-		var height = $(element).offset().top - ($(window).height()*0.2);
-		var current = $(window).scrollTop();
-		// trunctate both values
-		height -= 0.5;
-		height = parseFloat(height.toFixed());
-		current -= 0.5;
-		current = parseFloat(animationRange.toFixed());
-
-		var scrollInterval = setInterval(function(){
-			if (current < height) {
-				current++;
-				$(window).scrollTop(current);
-			}
-			else if (current > height) {
-				current--;
-				$(window).scrollTop(current);
-			} 
-		}, 1);
-		if (current == height){
-			clearInterval(scrollInterval);
-		}
-		
-		
-		
+	function scrollToId(element) {
+		/*
+			var height = $(element).offset().top - ($(window).height()*0.2);
+      		$('html, body').animate({
+        		scrollTop: height
+      		}, 1000);
+    	*/
 	}
 	
 	//implement onclick listeners for navbar items
@@ -125,9 +106,7 @@ $(document).ready(function() {
 		scrollToId("#Projects");
 	});
 	
-	console.log("On start:\n");
-	console.log("Waterloo text width:" + $("#EducationText").width());
-	console.log("Window width: " + $(window).width());
+
 	//initialize first tags that cover height of window 
 	for(var i = 0; i < animateIDs.length; i++) {
 		var id = animateIDs[i];
@@ -143,8 +122,7 @@ $(document).ready(function() {
 	
 	$(window).scroll(function(){
 		updateThresholds();
-		console.log("Skills aboveRange: " + aboveRange("#Skills"));
-		
+		//console.log("PacMan in range: " + inAnimationRange("#PacManVR"));
 		for (var i = 0; i < animateIDs.length; i++) {
 			var id = animateIDs[i];
 			if (inAnimationRange(id)) {
@@ -166,8 +144,9 @@ $(document).ready(function() {
 		}
 	});
 
+
 	$("#email").hover(function() {
-		$("#contact-description").html("chris.huynh17@gmail.com");
+		$("#contact-description").html("christopher.huynh@uwaterloo.ca");
 	});
 	$("#phone").hover(function() {
 		$("#contact-description").html("289-879-1347");
@@ -178,7 +157,7 @@ $(document).ready(function() {
 	$("#github").hover(function() {
 		$("#contact-description").html("Click to view my GitHub page.");
 	});
-
+	
 });
 
 
