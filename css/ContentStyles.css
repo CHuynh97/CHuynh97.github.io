@@ -188,6 +188,9 @@ body {
 	width: 100px;
 	height: 100px;
 }
+.contact-tile:hover {
+	transform: scale(1.1);
+}
 #contact-list {
 	height: 200px;
 	width: 100%;
@@ -209,31 +212,28 @@ body {
 	font-size: 20px;
 }
 
-#resume:hover {
-	transform: scale(1.1);
-}
-#email:hover {
-	transform: scale(1.1);
-}
-#phone:hover {
-	transform: scale(1.1);
-}
-#github:hover {
-	transform: scale(1.1);
-}
 
 #contact-description {
 	margin: 0;
 	float: left;
 }
 
-.progress {
-	margin-right: 25%;
+.skill-rating {
+	width:50%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 .skill-text {
 	width: 20%;
 	margin-left: 50px;
+}
+.skill-star {
+	height: 75px;
+	width: 75px;
+	margin-right: 0px;
+	/*align-self: center;*/
 }
 
 

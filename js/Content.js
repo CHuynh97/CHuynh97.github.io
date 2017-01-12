@@ -80,7 +80,7 @@ $(document).ready(function() {
 			$(id).addClass("activeNav");
 		}		
 	}
-
+	
 	//function to scroll to header when nav item clicked
 	function scrollToId(element) {
 		/*
@@ -157,7 +157,9 @@ $(document).ready(function() {
 	$("#github").hover(function() {
 		$("#contact-description").html("Click to view my GitHub page.");
 	});
-	
+	$("#linkedin").hover(function() {
+		$("#contact-description").html("Click to view my LinkedIn profile");
+	});
 });
 
 
