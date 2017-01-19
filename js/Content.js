@@ -83,26 +83,23 @@ $(document).ready(function() {
 	
 	//function to scroll to header when nav item clicked
 	function scrollToId(element) {
-		/*
-			var height = $(element).offset().top - ($(window).height()*0.2);
-      		$('html, body').animate({
-        		scrollTop: height
-      		}, 1000);
+		/*var height = $(element).offset().top-upperThreshold;
+      	$('html, body').animate({
+        	scrollTop: height
+      	}, 1000);
     	*/
 	}
 	
 	//implement onclick listeners for navbar items
 	$("#AboutMeNav").addClass("activeNav");
 	$("#AboutMeNav").click(function() {
-		changeActiveNav("#AboutMeNav");
 		scrollToId("#AboutMe");
 	});
 	$("#SkillsNav").click(function() {
-		changeActiveNav("#SkillsNav");
 		scrollToId("#Skills");
 	});
 	$("#ProjectsNav").click(function() {
-		changeActiveNav("#ProjectsNav");
+		
 		scrollToId("#Projects");
 	});
 	
@@ -142,11 +139,20 @@ $(document).ready(function() {
 					}
 				}
 		}
+		if (inAnimationRange("#AboutMe")) {
+			changeActiveNav("#AboutMeNav");
+		}
+		if (inAnimationRange("#Skills")) {
+			changeActiveNav("#SkillsNav");
+		}
+		if (inAnimationRange("#Projects")) {
+			changeActiveNav("#ProjectsNav");
+		}
 	});
 
 
 	$("#email").hover(function() {
-		$("#contact-description").html("christopher.huynh@uwaterloo.ca");
+		$("#contact-description").html("chris.huynh17@gmail.com");
 	});
 	$("#phone").hover(function() {
 		$("#contact-description").html("289-879-1347");
