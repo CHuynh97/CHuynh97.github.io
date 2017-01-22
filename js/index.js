@@ -35,12 +35,12 @@ $(document).ready(function() {
 				}
 			}
 		}, 50);
-		$(".blank").hide();
-	}, 2000);
+		
+	}, 0);
 
 	setTimeout(function() {
 		clearInterval(myInterval);
-	}, 4000);
+	}, 3000);
 	
 	$("html").click(function() {
 		$("html").load("content.html");
