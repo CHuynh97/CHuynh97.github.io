@@ -1,5 +1,7 @@
 body {
 	padding:50px ;
+	background-color: #f8f8f8;
+
 }
 a {
 	color: #333;
@@ -17,7 +19,7 @@ a:focus {
 	top: 0px;
 	float: right;
 	width: 100%;
-	padding-right: 25px;
+	padding-right: 50px;
 	/*margin-left: 0px !important;*/
 	z-index: 1;
 }
@@ -85,12 +87,7 @@ a:focus {
 }
 
 
-ul {
-	margin-left: 75px;
-}
-li h6 {
-	margin-left: 0;
-}
+
 
 
 .SlideLeft {
@@ -144,6 +141,9 @@ img {
 	margin-bottom: 10px;
 }
 
+.progress {
+	width: 80%;
+}
 
 #myFace {
 	height: 200px;
@@ -162,9 +162,6 @@ img {
 	position: fixed;
 	right: 0;
 	top: 30%;
-}
-body {
-	background-color: #f8f8f8;
 }
 
 #ContactMe {
@@ -219,37 +216,19 @@ body {
 	float: left;
 }
 
-.skill-rating {
-	width:50%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
+
 
 .skill-text {
 	width: 20%;
-	margin-left: 50px;
-}
-.skill-star {
-	height: 75px;
-	width: 75px;
-	margin-right: 0px;
-	/*align-self: center;*/
+	
 }
 
 
-#PacMan-carousel {
-	height: 50%;
-	width:50%;
-	float: right !important;
-	margin-right: 75px;
-	padding: 0;
-}
 .project {
 	width: 50%;
-	margin-left: 75px;
+	
 }
-.carousel-image {
-	width: 100%;
-	height: 100%;
+.project img {
+	width: 150px;
+	height: 150px;
 }
