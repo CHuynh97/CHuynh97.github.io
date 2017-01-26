@@ -38,7 +38,7 @@ $(document).ready(function() {
 		return ((elementBottom < lowerThreshold) && (elementTop > upperThreshold));
 	}
 	function aboveRange(element) {
-		var elementBottom = $(element).offset().top; + $(element).height();
+		var elementBottom = $(element).offset().top + $(element).height();
 		return (elementBottom <= upperThreshold);
 	}
 	function belowRange(element) {
@@ -50,11 +50,12 @@ $(document).ready(function() {
 	
 	//get all ids with animateInfo class, store in array
 	var animatingInfo = document.getElementsByClassName("animateInfo");
-	var animateIDs = []
+	var animateIDs = [];
 	for (var i = 0; i < animatingInfo.length; i++) {
-		var entry = "#"+$(animatingInfo[i]).attr("id")
+		var entry = "#"+$(animatingInfo[i]).attr("id");
 		animateIDs.push(entry);
 	}
+	
 
 	//hide all animating tags
 	function hideAll() {
@@ -67,7 +68,7 @@ $(document).ready(function() {
 	
 
 	//Array of navbar items
-	var navList = ["#AboutMeNav", "#SkillsNav", "#ProjectsNav"];
+	var navList = ["#AboutMeNav", "#SkillsNav", "#WorkNav", "#ProjectsNav"];
 
 	//switches which NavBar item is active
 	function changeActiveNav(id) {
@@ -145,6 +146,9 @@ $(document).ready(function() {
 		if (inAnimationRange("#Skills")) {
 			changeActiveNav("#SkillsNav");
 		}
+		if (inAnimationRange("#Work")) {
+			changeActiveNav("#WorkNav");
+		}
 		if (inAnimationRange("#Projects")) {
 			changeActiveNav("#ProjectsNav");
 		}
@@ -166,7 +170,42 @@ $(document).ready(function() {
 	$("#linkedin").hover(function() {
 		$("#contact-description").html("Click to view my LinkedIn profile");
 	});
+
+	var contactButtons = document.getElementsByClassName("contact-button");
+	var contactDivs = document.getElementsByClassName("contact_text");
+	var contactTexts = [];
+	for (var i = 0; i < contactDivs.length; i++) {
+		
+		var img = contactButtons[i];
+		
+		$(contactDivs[i]).hide();
+		var enter = onHoverEnter(i);
+		$(img).hover(enter);
+	}
+	function onHoverEnter(i) {
+		return function() {
+			if (!$(contactDivs[i]).is(":visible")) {
+				$(contactDivs[i]).show();
+				if ($(contactDivs[i]).hasClass("Exit")) {
+					$(contactDivs[i]).removeClass("Exit");
+				}
+				$(contactDivs[i]).addClass("SlideLeft");
+			}
+			else {
+				if ($(contactDivs[i]).hasClass("SlideLeft")) {
+					$(contactDivs[i]).removeClass("SlideLeft");
+				}
+				$(contactDivs[i]).addClass("Exit");
+				$(contactDivs[i]).hide(500);
+			}
+		};
+	}
+
+	
+
 });
+
+
 
 
 

@@ -16,12 +16,15 @@
 	<nav class="navbar transparent">
 		<div class="container-fluid ">
 		<div id="initials">
-			<img id="c-initial" src="images/letter-tiles/c-tile.svg">
-			<img id="h-initial" src="images/letter-tiles/h-tile.svg">
+			<a href="index.html">
+				<img id="c-initial" src="images/letter-tiles/c-tile.svg">
+				<img id="h-initial" src="images/letter-tiles/h-tile.svg">
+			</a>	
 		</div>
 		<ul class="nav navbar-nav pull-right">
 			<li id="AboutMeNav"><a>About Me</a></li>
 			<li id="SkillsNav"><a>Skills</a></li>
+			<li id="WorkNav"><a>Work Experience</a></li>
 			<li id="ProjectsNav"><a>Projects</a></li>
 		</ul>
 		</div>
@@ -57,7 +60,7 @@
 	
 	
 	<h1 id="Skills" class="Header animateInfo hideOnStart">Technical Skills</h1>
-	<div id="SkillsDiv">
+	
 		<table>
 			<tr id="java" class="animateInfo hideOnStart">
 				<td>
@@ -73,10 +76,9 @@
 				</div>
 				</td>
 			</tr>
-			<tr id="Cpp" class="animateInfo hideOnStart">
+			<tr id="cpp" class="animateInfo hideOnStart">
 				<td class="skill-text">
 				<h3>C++</h3>	
-				
 				</td>
 				<td>
 				<div class="progress">
@@ -87,7 +89,20 @@
 				</div>
 				</td>
 			</tr>
-			<tr id="Csharp" class="animateInfo hideOnStart">
+			<tr id="arduino" class="animateInfo hideOnStart">
+				<td class="skill-text">
+				<h3>Arduino</h3>	
+				</td>
+				<td>
+				<div class="progress">
+  					
+  					<div class="progress-bar progress-bar-info" role="progressbar"
+  					aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+    				</div>
+				</div>
+				</td>
+			</tr>
+			<tr id="csharp" class="animateInfo hideOnStart">
 				<td class="skill-text">
 				<h3>C#</h3>
 				<h5>Unity</h5>	
@@ -154,104 +169,98 @@
 			</tr>
 		</table>		
 				
+	
+	
+	<h1 id="Work" class="Header animateInfo hideOnStart">Work Experience</h1>
+
+	
+	<div id="dh" class="content animateInfo hideOnStart">
+		<div >
+			<h2>D+H</h2>
+			<h4>Sept. 2016 - Dec. 2016</h4>
+			<h4>Software developer in test for Canadian Mortgage Technology (CMT) team. 
+				Worked with team to develop new testing environment implementing Selenium WebDriver (Java) and TestNG 
+				to increase performance in automated testing.</h4>
+		</div>
+		<div >
+			<img class="work_img" src="images/dh.png" style="height: 120px;">
+		</div>
+	</div>
+	<div id="i3" class="content animateInfo hideOnStart">
+		<div>
+			<h2>i3 International</h2>
+			<h4>Jan. 2016 - Apr. 2016</h4>
+			<h4>Assistant to lead Hardware Engineer. Main projects include assisting in design of new server chassis, 
+				and manual testing camera performance with integrated convolutional neural network for object detection.</h4>
+		</div>
+		<div>
+			<img class="work_img" src="images/i3.png">
+		</div>
 	</div>
 	
+		
 	
 	<h1 id="Projects" class="Header animateInfo hideOnStart">Projects</h1>
 
-	<table style="margin-bottom: 100px">
-		<tr id="PacManVR" class="animateInfo hideOnStart">
-		<td class="project">
-		<div>
-			<h2>PacMan VR</h2>
-			<ul class="list-group ProjectDetails">
+	<div style="margin-bottom: 100px">
+		<div id="PacManVR" class="content animateInfo hideOnStart">
+			<div>
+				<h2>PacMan VR</h2>
 				<h4>Unity</h4>
 				<h4>Visual Studio, C#</h4>
 				<h4>Google VR SDK for Unity</h4>
-			</ul>
-		</div>	
-		</td>
-		<td class="project">
-			<img src="images/pacmanvr.png">
-		</td>
-		</tr>
-		<tr id="Path" class="animateInfo hideOnStart">
-		<td class="project">
-		<div>
-			<h2>Path</h2>
-			<ul class="list-group ProjectDetails">
+			</div>	
+			<div>
+				<img class="project_img" src="images/pacmanvr.png">
+			</div>
+		</div>
+
+		<div id="Path" class="content animateInfo hideOnStart">
+			<div>
+				<h2>Path</h2>
 				<h4>Android SDK</h4>
 				<h4>Google Maps, Directions, Geocoding API</h4>
-				<h4>User inputs desired locations to travel to and length of time staying at each location, and the app will determine the order of locations to visit to minimize travel time</h4>
-			</ul>
+				<h4>User inputs desired locations to travel to and length of time staying at each location, 
+					and the app will determine the order of locations to visit to minimize travel time.</h4>
+			</div>
+			<div>
+				<img class="project_img" src="images/path_logo.png">
+			</div>
 		</div>
-		</td>
-		<td class="project">
-			<img src="images/path_logo.png">
-		</td>
-		</tr>
-	</table>	
+	</div>	
 	
 	<!--Contact button-->
-	<div id="ContactMe" data-toggle="modal" data-target="#contactModal">
-		<img class="contact-button" src="images/contact-tiles/mail-tile.svg">
-		<img class="contact-button" src="images/contact-tiles/phone-tile.svg">
-		<img class="contact-button" src="images/contact-tiles/resume-tile.svg">
+	<div id="ContactMe">
+		<div>
+			<div class="contact_text">
+				<h4>chris.huynh17@gmail.com</h4>
+			</div>
+			<img class="contact-button" src="images/contact-tiles/mail-tile.svg">
+		</div>
+		<div>
+			<div class="contact_text">
+				<h4>(289) 879-1347</h4>
+			</div>
+			
+			<img class="contact-button" src="images/contact-tiles/phone-tile.svg">
+				
+		</div>
+		<div>
+			<div class="contact_text">
+				<h4>Click to view my resume</h4>
+			</div>
+			<a href="Resume.pdf" target="blank"><img class="contact-button" src="images/contact-tiles/resume-tile.svg"></a>
+		</div>
+		<div>
+			<div class="contact_text">
+				<h4>Click to view my Github</h4>
+			</div>
+			<a href="https://github.com/CHuynh97" target="blank"><img class="contact-button" src="images/contact-tiles/github-tile.svg"></a>	
+		</div>
+		
 	</div>
 
-	<!-- Modal -->
-  	<div class="modal fade" id="contactModal" role="dialog">
-    	<div class="modal-dialog">
-    
-     	<!-- Modal content-->
-      	<div class="modal-content">
-        	<div class="modal-header">
-          		<button type="button" class="close" data-dismiss="modal">&times;</button>
-          		<h4 class="modal-title">Contact Me</h4>
-        	</div>
-        	<div id="contact-list" class="modal-body">
-        	
-          		<figure id="email"> 
-					<img class="contact-tile" src="images/contact-tiles/mail-tile.svg">
-					<figcaption>Email</figcaption>
-				</figure>
-
-				<figure id="phone"> 
-					<img class="contact-tile" src="images/contact-tiles/phone-tile.svg">
-					<figcaption>Phone</figcaption>
-				</figure>
-
-				<figure id="resume"> 
-					<a href="Resume.pdf" target="_blank">
-					<img class="contact-tile" src="images/contact-tiles/resume-tile.svg">
-					<figcaption>Resume</figcaption>
-					</a>
-				</figure>
-
-				<figure id="github"> 
-					<a href="https://github.com/CHuynh97" target="_blank">
-					<img class="contact-tile" src="images/contact-tiles/github-tile.svg">
-					<figcaption>GitHub</figcaption>
-					</a>
-				</figure>
-				
-				<!--
-				<figure id="linkedin">
-				<a href="">
-					<img class="contact-tile" src="images/contact-tiles/linkedin-tile.svg">
-					<figcaption>LinkedIn</figcaption>
-				</a>	
-				</figure>-->
-			
-        	</div>
-        	<div class="modal-footer">
-        		<h2 id="contact-description"></h2>
-          		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        	</div>
-      	</div>
-      
-    	</div>
-  	</div>
+	
 		
 	<h5 id="back-to-top"><a href=#>back to top</a></h5>
 
