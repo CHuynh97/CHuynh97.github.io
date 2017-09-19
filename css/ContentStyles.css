@@ -135,10 +135,9 @@ table {
 	width: 100%;
 }
 
-img {
+ img {
 	float: right !important;
-	margin-right: 75px;
-	margin-bottom: 10px;
+	
 }
 
 .progress {
@@ -241,4 +240,34 @@ img {
 	height: 150px;
 	width: 300px; 
 	margin-top: 40px;
+}
+
+#skills_div {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	padding-right: 100px;
+	padding-left: 100px; 
+}
+.skill_img {
+	width: 100px;
+	height: 100px;
+}
+.skill:hover .skill_img{
+	transform: scale(1.1);
+}
+
+.skill {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center; 
+	margin: 15px;
+}
+
+.skill h5{
+	opacity: 0;
+}
+.skill:hover h5 {
+	opacity: 100;
 }
