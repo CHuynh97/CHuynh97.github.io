@@ -36,7 +36,7 @@
 			<td>
 				<div>
 					<h4>I'm a 20 year old Computer Engineering looking to expand my skillset by exposing myself to all fields in technology</h4>
-					<h4>I am most interested in Data Science, Firmware/Embedded Software Development, and Designing Software Solutions.</h4>
+					<h4>I am most interested in Data Science, Firmware/Embedded Software Development, IoT, and Designing Software Solutions.</h4>
 					<h4>Ouside of tech my interests include mathematics, physics, soccer, basketball, volleyball, tennis and video games</h4>
 				</div>
 			</td>
@@ -119,6 +119,19 @@
 
 	<h1 id="Work" class="Header animateInfo hideOnStart">Work Experience</h1>
 
+	<div id="google" class="content animateInfo hideOnStart">
+		<div>
+			<h2>Google</h2>
+			<h2>Software Engineering Intern</h2>
+			<h4>Sept. 2018 - Dec. 2018</h4>
+			<h4>Embedded Software Engineering Intern for AIY Projects</h4>
+			<h4>Created build system for new Edge TPU embedded system with Make, Docker and Pbuilder.</h4>
+			<h4>Integrated SoC source code provided by vendor with the build system to build required images to flash our in-house OS onto the board.</h4>
+		</div>
+		<div>
+			<img class="work_img" src="images/google.png" style="height : 150px; width : 150px">
+		</div>
+	</div>
 	<div id="praemo" class="content animateInfo hideOnStart">
 		<div>
 			<h2>Praemo Inc</h2>
@@ -127,10 +140,9 @@
 			<h4>Refined backend architecture by creating a multi-node Kafka cluster to increase scalability and reliability.</h4>
 			<h4>Created real-time algorithm for extracting new data of client machines from Redis Streams and calculate features for machine
 				learning model and front-end data visualization application.</h4>
-			<h4></h4>
 		</div>
 		<div>
-			<img class="work_img" src="images/Praemo_Logo.png" style="height : 150px; width : 350px">
+			<img class="work_img" src="images/Praemo_Logo.png" style="height : 150px; width : 400px">
 		</div>
 	</div>
 	<div id="veyo" class="content animateInfo hideOnStart">
@@ -180,12 +192,22 @@
 		<div id="thermonitor" class="content animateInfo hideOnStart">
 			<div>
 				<h2>Thermonitor</h2>
-				<h4>C++, FreeRTOS, AWS IoT</h4>
-				<h4>IoT device developed with FreeRTOS that monitors the temperature of its environment and notifies consumers when such
+				<h4>C++, ESP8266, FreeRTOS, Python, Flask</h4>
+				<h4>IoT device developed with an esp8266 and FreeRTOS that monitors the temperature of its environment and notifies consumers when such
 					temperature is out of a desired range.</h4>
 			</div>
 			<div>
-				<img class="project_img" src="images/aws-iot.png">
+				<img class="project_img" src="images/thermometer.svg">
+			</div>
+		</div>
+		<div id="jclassifier" class="content animateInfo hideOnStart">
+			<div>
+				<h2>JClassifier</h2>
+				<h4>Python, TensorFlow, Edge TPU</h4>
+				<h4>Developed a computer vision model using Google's Coral Dev board with the Edge TPU to classify different models of Air Jordan sneakers</h4>
+			</div>
+			<div>
+				<img class="project_img" src="images/jordan.png">
 			</div>
 		</div>
 		<div id="pigoogler" class="content animateInfo hideOnStart">
@@ -197,17 +219,6 @@
 			</div>
 			<div>
 				<img class="project_img" src="images/rpi_logo.png" style="width: 120px;">
-			</div>
-		</div>
-		<div id="bit_predict" class="content animateInfo hideOnStart">
-			<div>
-				<h2>BitCoin Predictor</h2>
-				<h4>Python, Pandas, Keras, Google Cloud Natural Language</h4>
-				<h4>Use Google's Natural Language Python client to run sentiment analysis on Twitter and Reddit Data of Bitcoin and feed
-					to an LSTM nerual network built with Keras to predict Bitcoin's price index.</h4>
-			</div>
-			<div>
-				<img class="project_img" src="images/bitcoin.png">
 			</div>
 		</div>
 		<div id="pyosrm" class="content animateInfo hideOnStart">
@@ -234,57 +245,28 @@
 			</div>
 		</div>
 
-		<div id="to_mood" class="content animateInfo hideOnStart">
-			<div>
-				<h2>Toronto's mood</h2>
-				<h4>NodeJS, Twitter API, Google Cloud's Natural Language API</h4>
-				<h4>NodeJS web app that Twitter API to fetch top trends of Toronto and runs Sentiment analysis from Google Cloud's Natural
-					Language API to determine the mood of the city's society.</h4>
-			</div>
-			<div>
-				<img class="project_img" src="images/Twitter_bird_logo_2012.svg">
-			</div>
-		</div>
-
-
 	</div>
 
-	<!--Contact button-->
-	<div id="ContactMe">
-		<div>
-			<div class="contact_text">
-				<h4>chris.huynh17@gmail.com</h4>
-			</div>
-			<img class="contact-button" src="images/contact-tiles/mail-tile.svg">
-		</div>
-		<div>
-			<div class="contact_text">
-				<h4>(289) 879-1347</h4>
-			</div>
+	<h1 id="Contact" class="Header animateInfo hideOnStart">Contact</h1>
 
-			<img class="contact-button" src="images/contact-tiles/phone-tile.svg">
-
+	<div id="contact-list" class="animateInfo hideOnStart">
+		<div class="contact-entry">
+			<img class="contact-img" src="images/contact-tiles/mail-tile.svg">
+			<h2>chris.huynh17@gmail.com</h2>
 		</div>
-		<div>
-			<div class="contact_text">
-				<h4>Click to view my resume</h4>
-			</div>
-			<a href="Resume.pdf" target="blank">
-				<img class="contact-button" src="images/contact-tiles/resume-tile.svg">
-			</a>
+		<div class="contact-entry">
+			<img class="contact-img" src="images/contact-tiles/phone-tile.svg">
+			<h2>(289) 879-1347</h2>
 		</div>
-		<div>
-			<div class="contact_text">
-				<h4>Click to view my Github</h4>
-			</div>
-			<a href="https://github.com/CHuynh97" target="blank">
-				<img class="contact-button" src="images/contact-tiles/github-tile.svg">
-			</a>
+		<div class="contact-entry">
+			<a href="https://github.com/CHuynh97" target="_blank"><img class="contact-img-clickable" src="images/contact-tiles/github-tile.svg"></a>
+			<h2>Click to view my Github profile.</h2>
 		</div>
-
+		<div class="contact-entry">
+			<a href="./Resume.pdf" target="_blank"><img class="contact-img-clickable" src="images/contact-tiles/github-tile.svg"></a>
+			<h2>Click to view my resume.</h2>
+		</div>
 	</div>
-
-
 
 	<h5 id="back-to-top">
 		<a href=#>back to top</a>
